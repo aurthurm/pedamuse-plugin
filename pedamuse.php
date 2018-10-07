@@ -26,12 +26,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 define( 'PEDAMUSE_DIR', plugin_dir_path( __FILE__ ) );
 
 // Load plugin CMB2
-if ( file_exists( dirname( __FILE__ ) . '/libraries/CMB2/init.php' ) ) {
-	require_once dirname( __FILE__ ) . '/libraries/CMB2/init.php';
+if ( file_exists( dirname( __FILE__ ) . '/libraries/CMB2-trunk/init.php' ) ) {
+	require_once dirname( __FILE__ ) . '/libraries/CMB2-trunk/init.php';
     // echo " loaded ";
     // die();
-} elseif ( !file_exists( dirname( __FILE__ ) . '/libraries/CMB2/init.php' ) ) {
-	require_once dirname( __FILE__ ) . '/libraries/CMB2/init.php';
+} elseif ( !file_exists( dirname( __FILE__ ) . '/libraries/CMB2-trunk/init.php' ) ) {
+	require_once dirname( __FILE__ ) . '/libraries/CMB2-trunk/init.php';
    // echo " failed ";
    // die();
 }
